@@ -3,7 +3,7 @@
 	xmlns="http://java.sun.com/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	<persistence-unit name="eshop" transaction-type="RESOURCE_LOCAL"> <!-- transaction-type = communication avec bdd, 2 valeurs possibles : JTA ou RESOURCE_LOCAL -->
+	<persistence-unit name="exocinema" transaction-type="RESOURCE_LOCAL"> <!-- transaction-type = communication avec bdd, 2 valeurs possibles : JTA ou RESOURCE_LOCAL -->
 		<!-- provider = implémentation de jpa utilisée -->
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
@@ -11,7 +11,7 @@
 			<!-- configuration des drivers du jdbc -->
 			<property name="hibernate.connection.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<!-- url, la base indiquée doit exister, sinon ça crash -->
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/eshop"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/exocinema"/>
 			<property name="hibernate.connection.user" value="root"/>
 			<property name="hibernate.connection.password" value=""/>
 			

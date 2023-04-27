@@ -1,0 +1,18 @@
+package exoCinema.repositories;
+
+import java.util.List;
+
+public interface DaoGeneric<T,K> {
+
+	void insert(T obj);
+	
+	T update(T obj);
+	
+	void delete(T obj);
+	
+	void deletebyKey(K key);
+	
+	T findByKey(K key);
+	
+	List<T> findAll();
+}
